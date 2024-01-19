@@ -1,9 +1,9 @@
 //const tinderUser = new Object() // singleton
 // const tinderUser = {} // non singleton
 
-tinderUser.id = "123abc"
-tinderUser.name = "Sammy"
-tinderUser.isLoggedIn = false
+// tinderUser.id = "123abc"
+// tinderUser.name = "Sammy"
+// tinderUser.isLoggedIn = false
 
 // console.log(tinderUser);
 
@@ -38,8 +38,24 @@ const users = [
     },
 ]
 users[1].email
-console.log(tinderUser);
+//console.log(tinderUser);
 
-console.log(Object.values(tinderUser));
-console.log(Object.keys(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+
+const course = {
+    coursename: "JavaScript",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+//course.courseInstructor
+const {courseInstructor: instructor} = course // destructure
+
+//console.log(courseInstructor);
+console.log(instructor);
+
+
+
