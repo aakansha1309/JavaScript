@@ -50,4 +50,3 @@ addTwo(5)   /// hoisting ths cannnot be done before execution
 const addTwo = function(num) {
     return num + 2
 }
-
