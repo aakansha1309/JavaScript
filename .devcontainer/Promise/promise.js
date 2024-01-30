@@ -1,10 +1,10 @@
-const promiseOne = new Promise(function(resolve, reject){
+const promiseOne = new Promise(function(resolve, reject){   // promise ---- object
     // Do an async task
     // DB calls, cryptography, network 
 
     setTimeout(function(){
         console.log('Async task is complete');
-        resolve()
+        resolve() // to connect .then() & resolve()
     }, 1000)
 })
 
@@ -67,7 +67,7 @@ const promiseFive = new Promise(function(resolve,reject){
     },1000)
 })
 
-async function consumePromiseFive() {
+async function consumePromiseFive() {        // async await directly errors ko handle nhi kr skte hai
     try {
         const response = await promiseFive 
         console.log(response);
